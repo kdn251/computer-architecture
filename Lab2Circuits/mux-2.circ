@@ -64,44 +64,39 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(420,240)" to="(480,240)"/>
     <wire from="(310,390)" to="(370,390)"/>
     <wire from="(420,380)" to="(480,380)"/>
-    <wire from="(310,390)" to="(310,530)"/>
+    <wire from="(310,390)" to="(310,460)"/>
     <wire from="(480,330)" to="(480,380)"/>
     <wire from="(180,380)" to="(370,380)"/>
     <wire from="(660,310)" to="(700,310)"/>
     <wire from="(310,250)" to="(310,390)"/>
     <wire from="(480,330)" to="(610,330)"/>
-    <wire from="(300,530)" to="(310,530)"/>
     <wire from="(350,250)" to="(370,250)"/>
     <wire from="(180,240)" to="(370,240)"/>
     <wire from="(480,290)" to="(610,290)"/>
-    <comp lib="0" loc="(180,240)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(291,571)" name="Text">
-      <a name="text" val="S"/>
-    </comp>
+    <comp lib="1" loc="(350,250)" name="NOT Gate"/>
     <comp lib="1" loc="(660,310)" name="OR Gate">
       <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(180,380)" name="Pin">
       <a name="tristate" val="false"/>
+      <a name="label" val="In1"/>
     </comp>
-    <comp lib="6" loc="(135,242)" name="Text">
-      <a name="text" val="In0"/>
+    <comp lib="0" loc="(310,460)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
     </comp>
-    <comp lib="1" loc="(350,250)" name="NOT Gate"/>
-    <comp lib="6" loc="(139,385)" name="Text">
-      <a name="text" val="In1"/>
+    <comp lib="0" loc="(180,240)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="In0"/>
     </comp>
     <comp lib="0" loc="(700,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
+      <a name="label" val="Result"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(300,530)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(420,240)" name="AND Gate"/>
     <comp lib="1" loc="(420,380)" name="AND Gate"/>
+    <comp lib="1" loc="(420,240)" name="AND Gate"/>
   </circuit>
 </project>
